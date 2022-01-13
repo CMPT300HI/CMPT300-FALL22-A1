@@ -24,9 +24,4 @@ jobs:
     - name: check files 
       if: always()
       run: ls 
-    - name: python run
-      if: always()
-      run: python3 checkoutput.py
-    - name: check files
-      if: always()
-      run: ls
+    
