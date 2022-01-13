@@ -21,9 +21,12 @@ jobs:
       run: ./my_memory_util
     - name: my_version
       run: ./my_version
-    - name: check files
+    - name: check files 
+      if: always()
       run: ls 
     - name: python run
+      if: always()
       run: python3 checkoutput.py
     - name: check files
+      if: always()
       run: ls
